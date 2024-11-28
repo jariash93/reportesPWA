@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #0a4a94;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -14,11 +14,14 @@ body {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: medium;
+    color: black
+    
 }
 
 button {
-    background-color: #00A8E8;
-    color: white;
+    background-color: #ca5100;
+    color: rgb(239, 239, 239);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -26,7 +29,7 @@ button {
 }
 
 button:hover {
-    background-color: #007BB5;
+    background-color: #ff9029;
 }
 table {
     width: 100%;

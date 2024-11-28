@@ -1,0 +1,138 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #034670;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 150px; /* Cambie el valor según el tamaño que prefiera */
+    width: auto; /* Mantiene las proporciones del logotipo */
+    margin-left: 50%;/* Ajusta el espacio alrededor del logotipo */
+}
+
+
+/* Menú */
+.menu ul {
+    list-style: none;
+    display: flex; /* Hace que los elementos se alineen en fila */
+    gap: 15px; /* Espacio entre los elementos */
+    margin: 0%;
+    margin-left: -100%;
+    padding: 20px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: solid;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px; /* Espaciado interno para que se vean más atractivos */
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff4757; /* Color al pasar el cursor por encima */
+}
+
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.generate-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff4757;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background-color: #e84118;
+}
+
+/* Contenedor de Reporte */
+.report-container {
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #034670; /* Borde rojo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para que sobresalga */
+    width: 900px; /* Ancho fijo */
+    margin: 50px auto; /* Centrar en la página */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Títulos dentro del contenedor */
+.report-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Botón */
+.generate-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff4757;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background-color: #e84118;
+}
+
+/* Inputs */
+.search-bar input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
