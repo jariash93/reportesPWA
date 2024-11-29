@@ -1,26 +1,41 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportes ATC</title>
+    <title>Reporte Web</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <header id="header-top">Bienvenido a Reportes ATC</h1>
-    
-    <!-- Contenedor principal de la aplicación -->
-    <div id="app">
-        <p>Seleccione un rango de fechas para generar el reporte:</p>
-        
-        <!-- Selección de fechas y botones -->
-        <input type="date" id="fechaInicio">
-        <input type="date" id="fechaFin">
-        <button id="generarReporte">Generar Reporte</button>
-        <button id="exportarCSV" style="display: none;">Exportar a CSV</button> <!-- Botón para exportar -->
-        
-        <!-- Contenedor del ProgressBar -->
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/logodata.png" alt="Logotipo" />
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Reportes</a></li>
+                <li><a href="#">Equipo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="report-container">
+        <h1>Generar Reporte</h1>
+        <div class="search-container">
+        <div class="search-bar">
+            <label for="fechaInicio">Desde: </label>
+            <input type="date" id="fechaInicio">
+            <label for="fechaFin">Hasta: </label>
+            <input type="date" id="fechaFin">
+            <button class="generate-btn">Generar Reporte</button>
+            <button id="exportarCSV" style="display: none;">Exportar a CSV</button> <!-- Botón para exportar -->
+            <!-- Contenedor del ProgressBar -->
         <div id="progressContainer" style="display: none; margin-top: 20px;">
             <progress id="progressBar" value="0" max="100" style="width: 100%;"></progress>
             <p id="progressText" style="text-align: center;">Generando reporte...</p>
@@ -28,6 +43,11 @@
     </div>
 
     <script src="script.js"></script>
-</body>
-</html>
+        </div>
+        </div>
+        <footer class="footer">
+            <p>© 2024 Ventas ATC. DataLab fue diseñada por Equipo I+D. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+    
 
