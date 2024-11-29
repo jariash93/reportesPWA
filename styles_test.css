@@ -8,8 +8,22 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('assets/fondo2.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
+    position: relative; /* Necesario para el pseudo-elemento */
+}
+
+
+#content-body {
+    background-image: url('assets/fondo2.jpg'); /* Cambie por su imagen */
+    background-size: cover; /* Ajusta para cubrir el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repetir la imagen */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    color: #fff; /* Asegura que el texto sea legible */
 }
 
 /* Header */
@@ -17,7 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #034670;
+    background-color: #293039;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -97,14 +111,16 @@ body {
 
 /* Contenedor de Reporte */
 .report-container {
-    background-color: #fff; /* Fondo blanco */
-    border: 1px solid #034670; /* Borde rojo */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
     border-radius: 10px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para que sobresalga */
-    width: 900px; /* Ancho fijo */
-    margin: 50px auto; /* Centrar en la página */
-    text-align: center; /* Centrar el texto */
+    border: #034670 1px solid;
+    padding: 20px;
+    width: 80%; /* Ajuste del ancho */
+    max-width: 900px;
+    margin: 50px auto; /* Centrado en la página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    position: relative; /* Necesario para manejar la superposición */
+    z-index: 10; /* Hace que el contenedor esté por encima del fondo */
 }
 
 /* Títulos dentro del contenedor */
