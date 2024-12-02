@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataLab</title>
+    <link rel="stylesheet" href="styles_login.css">
+</head>
+<header>
+    <div class="logo">
+        <img src="assets/logodata.png" alt="Logotipo" />
+    </div>
+</header>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" class="login-btn">Ingresar</button>
+        </form>
+        
+        <!-- Nuevo enlace agregado para problemas de inicio de sesión -->
+        <p class="help-message">
+            <a href="#">¿Problemas para iniciar sesión?</a>
+        </p>
+        
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+        <p>© 2024 Ventas ATC. DataLab fue diseñada por Equipo I+D. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

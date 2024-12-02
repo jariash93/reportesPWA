@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #21262e;
+}
+
+.logo img {
+    height: 250px;
+    width: auto;
+    margin-left:-5%;
+    margin-top: -150%;
+    text-align: center;
+    margin-bottom: 50%;
+
+}
+
+.login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-left: -18%;
+    
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    
+}
+
+.login-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #055282;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #c0005a;
+}
+
+.error-message {
+    color: red;
+    margin-top: 15px;
+}
+
+.help-message {
+    margin-top: 15px; /* Espacio encima del mensaje de ayuda */
+    text-align: center;
+}
+
+.help-message a {
+    color: #034670; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.3s ease;
+}
+
+.help-message a:hover {
+    color: #c0005a; /* Color cuando pasas el cursor por encima */
+}
+
+
+.footer {
+    background-color: #293039; /* Fondo oscuro para hacer contraste */
+    color: #ffffff; /* Texto blanco para que sea legible */
+    text-align: center; /* Centra el texto */
+    padding: 15px; /* Espaciado interno para que no esté pegado a los bordes */
+    position: fixed; /* Fija el footer al fondo de la pantalla */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle algo de profundidad */
+}
