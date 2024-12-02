@@ -9,9 +9,9 @@ body {
 }
 
 .logo img {
-    height: 250px;
+    height: 220px;
     width: auto;
-    margin-left:-5%;
+    margin-left:-16%;
     margin-top: -150%;
     text-align: center;
     margin-bottom: 50%;
@@ -25,7 +25,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
-    margin-left: -18%;
+    margin-left: -23%;
     
 }
 
